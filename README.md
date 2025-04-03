@@ -18,18 +18,18 @@
 - Update appsettings.json with your database connection string and Auth0 credentials
 
 ## Run the API
-# With Docker
+## With Docker
 - Build Docker image >> docker build -t userprofile-api .
 - Run container >> docker run -p 8080:80 -d userprofile-api
 
-# Without Docker
+## Without Docker
 - dotnet restore
 - dotnet build
 - dotnet run
 
 ## API Endpoints
-# GET (Check if API is running)
+## GET (Check if API is running)
 >> http://localhost:8080/
 
-# GET (Retrieve authenticated user's profile)
+## GET (Retrieve authenticated user's profile)
 >> http://localhost:8080/profile
