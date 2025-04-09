@@ -1,4 +1,4 @@
-﻿namespace UserProfileApi.Models
+﻿namespace UserProfileApi.Domain.Entities
 {
     public class UserProfile
     {

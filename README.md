@@ -1,4 +1,4 @@
-## UserProfileAPI ##
+## UserProfileApi - Clean Architecture ##
 - A simple .NET 8.0 Web API that provides authenticated user profiles with Postgres and Auth0 authentication.
 
 ## Features
@@ -15,21 +15,21 @@
 
 ## Configuration
 - Clone the repository
-- Update appsettings.json with your database connection string and Auth0 credentials
+- Update `appsettings.json` with your database connection string and Auth0 credentials
 
 ## Run the API
-# With Docker
+## With Docker
 - Build Docker image >> docker build -t userprofile-api .
 - Run container >> docker run -p 8080:80 -d userprofile-api
 
-# Without Docker
+## Without Docker
 - dotnet restore
 - dotnet build
 - dotnet run
 
 ## API Endpoints
-# GET (Check if API is running)
->> http://localhost:8080/
+## GET (Retrieve authenticated user's profile by userId)
+>> http://localhost:8080/api/UserProfile/by-id
 
-# GET (Retrieve authenticated user's profile)
->> http://localhost:8080/profile
+## GET (Retrieve authenticated user's profile by email)
+>> http://localhost:8080/api/UserProfile/by-email

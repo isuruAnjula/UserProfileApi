@@ -1,0 +1,6 @@
+@UserProfileApiCleanArc_HostAddress = http://localhost:5099
+
+GET {{UserProfileApiCleanArc_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

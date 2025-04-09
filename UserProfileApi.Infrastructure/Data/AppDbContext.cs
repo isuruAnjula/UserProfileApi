@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using UserProfileApi.Models;
+﻿using UserProfileApi.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace UserProfileApi.Data
+namespace UserProfileApi.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
